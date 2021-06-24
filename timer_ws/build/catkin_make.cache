@@ -1,0 +1,2 @@
+timer_package
+-DCATKIN_DEVEL_PREFIX=/home/maksim/timer_ws/devel -DCMAKE_INSTALL_PREFIX=/home/maksim/timer_ws/install -G Unix Makefiles

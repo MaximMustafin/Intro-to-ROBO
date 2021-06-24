@@ -1,0 +1,8 @@
+prefix=/home/maksim/catkin_ws/devel
+
+Name: clear_map_service
+Description: Description of clear_map_service
+Version: 0.0.0
+Cflags: -I/home/maksim/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

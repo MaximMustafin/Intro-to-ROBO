@@ -1,0 +1,4 @@
+<launch>
+<node name="listener1" pkg="chat_pkg" type="listener" output="screen"/>
+<node name="talker1" pkg="chat_pkg" type="talker" output="screen"/>
+</launch>

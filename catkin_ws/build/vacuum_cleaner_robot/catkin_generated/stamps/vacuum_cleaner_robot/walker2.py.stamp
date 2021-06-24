@@ -1,0 +1,93 @@
+#!/usr/bin/env python
+import rospy
+from geometry_msgs.msg import Twist
+from sensor_msgs.msg import LaserScan
+import sys
+import math
+from gazebo_msgs import GetModelState
+
+
+class Walker:                
+	ROTATE_ANGLE = -1.0
+	yaw_z = 3.14
+	FORWARD_SPEED = 0.2
+	ANGULAR_SPEED = 0.5
+	MIN_SCAN_ANGLE = math.pi - (15.0/180.0*math.pi)
+	MAX_SCAN_ANGLE = math.pi + (15.0/180.0*math.pi)
+	MIN_DIST_FROM_OBSTACLE = 0.5
+	keepMoving = True
+	isRotated = False
+
+	def __init__(self):
+		pass
+
+	def start_move(self):
+		rospy.init_node('walker', anonymous=False)
+		pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+		sub = rospy.Subscriber('scan', LaserScan, self.callback)
+		rate = rospy.Rate(10) # 10hz
+		self.keepMoving = True
+		while not rospy.is_shutdown():
+			if self.keepMoving:
+				vel = Twist()
+				vel.linear.x = (-1)*self.FORWARD_SPEED
+				pub.publish(vel)
+				rate.sleep()
+			else:
+				vel = Twist()
+				vel.angular.z = self.ANGULAR_SPEED
+				pub.publish(vel)
+				print("Rotating to find free space")
+				rate.sleep()
+	
+	def setYaw_z(self):aa
+		quantX = 0.0
+		quantY = 0.0
+		quantZ = 0.0
+		quantW = 0.0
+        rospy.wait_for_service('/gazebo/get_model/state')
+        gms = rospy.ServiceProxy('gazebo/get_model_state', GetModelState)
+        gms.response_class.
+
+
+	def callback(self, msg):
+		if isRotated:
+			yaw_z = ROTATE_ANGLE;
+		isObstacleInFront = False
+        keepMoving = True
+		minIndex = round((self.MIN_SCAN_ANGLE - msg.angle_min) / msg.angle_increment)
+		maxIndex = round((self.MAX_SCAN_ANGLE - msg.angle_min) / msg.angle_increment)
+		currIndex = minIndex + 1
+		while currIndex <= maxIndex:
+			if msg.ranges[int(currIndex)] < self.MIN_DIST_FROM_OBSTACLE:
+				isObstacleInFront = True
+				break
+			currIndex = currIndex + 1
+		if isObstacleInFront:
+			keepMoving = False
+			maxDistance = 0
+			k = 0
+			i = msg.ranges.queue_size/2
+			while i<msg.ranges.queue_size:
+				if msg.ranges[int(i)]>maxDistance:
+					maxDistance = msg.ranges[int(i)]
+					k = i;
+				i = i + 1
+			i = 0
+			while i<msg.ranges.queue_size/2:
+				if msg.ranges[int(i)]>maxDistance:
+					maxDistance = msg.ranges[int(i)]
+					k = i;
+				i = i + 1
+			ROTATE_ANGLE = msg.angle_min + k * msg.angle_increment
+
+
+				
+			
+
+if __name__ == '__main__':
+	try:
+		walker = Walker()
+		walker.start_move()
+	except rospy.ROSInterruptException:
+		pass

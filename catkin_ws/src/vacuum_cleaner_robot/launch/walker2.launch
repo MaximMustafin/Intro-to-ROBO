@@ -1,0 +1,8 @@
+<launch>
+    <param name="/use_sim_time" value="true" />
+    <arg name="model" default="burger"/>
+    
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch"/>
+
+    <node name="walker2" pkg="vacuum_cleaner_robot" type="walker2" output="screen"/>
+</launch>

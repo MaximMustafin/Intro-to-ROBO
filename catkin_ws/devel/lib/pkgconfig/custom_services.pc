@@ -1,0 +1,8 @@
+prefix=/home/maksim/catkin_ws/devel
+
+Name: custom_services
+Description: Description of custom_services
+Version: 0.0.0
+Cflags: -I/home/maksim/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+chat_pkg:clear_map_service:custom_messages:custom_services:first_pkg:mapping:my_home_turtle:my_turtle:my_urdf:remapping:simple_service:tf_demo:vacuum_cleaner_robot:wander_bot
+-DCATKIN_DEVEL_PREFIX=/home/maksim/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/maksim/catkin_ws/install -G Unix Makefiles

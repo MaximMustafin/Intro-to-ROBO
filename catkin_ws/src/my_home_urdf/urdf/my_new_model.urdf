@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<robot name="my_model">
+  
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <!-- Base -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://my_home_urdf/meshes/chassis.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://my_home_urdf/meshes/chassis.dae"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="15"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <!-- Right Wheel -->
+    <link name="right_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.12"/>
+            </geometry>
+            <origin rpy="1.57075 0 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length="0.05" radius="0.12"/>
+            </geometry>
+            <origin rpy="1.57075 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="5"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+     <!-- Base and Right Wheel Joint -->
+    <joint name="base_to_right_wheel_joint" type="continuous">
+        <axis xyz="0 1 0"/>
+        <parent link="base_link"/>
+        <child link="right_wheel_link"/>
+        <origin xyz="-0.1 -0.16 -0.1"/>
+    </joint>
+
+    <!-- Left Wheel -->
+    <link name="left_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.12"/>
+            </geometry>
+            <origin rpy="1.57075 0 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length="0.05" radius="0.12"/>
+            </geometry>
+            <origin rpy="1.57075 0 0"/>
+        </collision>
+        <inertial>
+            <mass value="5"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <!-- Base and Left Wheel Joint -->
+    <joint name="base_to_left_wheel_joint" type="continuous">
+        <axis xyz="0 1 0"/>
+        <parent link="base_link"/>
+        <child link="left_wheel_link"/>
+        <origin xyz="-0.1 0.16 -0.1"/>
+    </joint>
+
+    <!-- Caster -->
+    <link name="caster_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.062"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.062"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="4"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <!-- Base and Caster Joint 1 -->
+    <joint name="base_to_caster_joint_x" type="continuous">
+        <axis xyz="0 1 0"/>
+        <parent link="base_link"/>
+        <child link="caster_link"/>
+        <origin xyz="0.17 0 -0.15"/>
+    </joint>
+
+    <!-- Common Caster -->
+    <link name="common_caster_link">
+    </link>
+
+    <!-- Caster and Common Caster Joint 2 -->
+    <joint name="caster_to_common_caster_joint_y" type="continuous">
+        <axis xyz="1 0 0"/>
+        <parent link="caster_link"/>
+        <child link="common_caster_link"/>
+    </joint>
+
+    <!--Manipulator Base-->
+    <link name="manipulator_base_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.15" radius="0.08"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder length="0.15" radius="0.08"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="5"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <!-- Base and Manipulator Base Joint-->
+    <joint name="base_to_manipulator_base_joint" type="revolute">
+        <axis xyz="0 0 1"/>
+        <limit effort="1000.0" lower="-1.7" upper="1.7" velocity="0.5"/>
+        <parent link="base_link"/>
+        <child link="manipulator_base_link"/>
+        <origin xyz="0.14 0 0.12"/>
+    </joint>
+
+    <!--Manipulator Shoulder's Root Link-->
+    <link name="manipulator_shoulder_root_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.038"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.038"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="3"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <!-- Manipulator Base and Manipulator Shoulder's Root Joint-->
+    <joint name="manipulator_base_to_shoulder_root_joint" type="revolute">
+        <axis xyz="1 0 0"/>
+        <limit effort="1000.0" lower="-0.7" upper="0.28" velocity="0.5"/>
+        <parent link="manipulator_base_link"/>
+        <child link="manipulator_shoulder_root_link"/>
+        <origin rpy="3.14 0 1.57" xyz="0.08 0 -0.01" />
+    </joint> 
+
+    <!--Manipulator Shoulder Link-->    
+    <link name="manipulator_shoulder_link">
+        <visual>
+            <geometry>
+                <box size="0.2 0.025 0.025"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.2 0.025 0.025"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="2"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <!-- Manipulator Base and Manipulator Shoulder Joint-->
+    <joint name="manipulator_base_to_shoulder_joint" type="fixed">
+        <parent link="manipulator_shoulder_root_link"/>
+        <child link="manipulator_shoulder_link"/>
+        <origin rpy="3.14 0 1.57" xyz="0 0.1 0" />
+    </joint> 
+
+    <!--Manipulator Hand's Roots Link-->
+    <link name="manipulator_hand_root_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+            <material name="white"/>
+            <origin xyz="0.16 0 0" />
+        </visual>
+        <visual>
+            <geometry>
+                <box size="0.022 0.2 0.022"/>
+            </geometry>
+            <material name="white"/>
+            <origin xyz="0.16 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+            <origin xyz="0.16 0 0" />
+        </collision>
+        <collision>
+            <geometry>
+                <box size="0.022 0.2 0.022"/>
+            </geometry>
+            <origin xyz="0.16 0 0" />
+        </collision>
+        <inertial>
+            <mass value="0.5"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <!-- Manipulator Shoulder and Manipulator Hand's Root Joint-->
+    <joint name="manipulator_shoulder_to_hand_root_joint" type="continuous">
+        <axis xyz="1 0 0"/>
+        <parent link="manipulator_shoulder_link"/>
+        <child link="manipulator_hand_root_link"/>
+        <origin rpy="3.14 0 0" xyz="-0.06 0 0" />
+    </joint> 
+
+    <!--Manipulator Left Hand Link-->
+    <link name="manipulator_left_hand_link">
+        <visual>
+            <geometry>
+                <box size="0.015 0.15 0.08"/>
+            </geometry>
+            <material name="white"/>
+            <origin xyz="0.1 0.21 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.015 0.15 0.08"/>
+            </geometry>
+            <origin xyz="0.1 0.21 0" />
+        </collision>
+        <inertial>
+            <mass value="0.5"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <joint name="manipulator_hand_root_to_hand_joint" type="prismatic">
+        <axis xyz="1 0 0"/>
+        <limit effort="1000.0" lower="-0.07" upper="0" velocity="0.5"/>
+        <parent link="manipulator_hand_root_link"/>
+        <child link="manipulator_left_hand_link"/>
+        <origin rpy="3.14 0 1.57" xyz="0.01 0 0" />
+    </joint>
+
+    <!--Manipulator Right Hand Link-->
+    <link name="manipulator_right_hand_link">
+        <visual>
+            <geometry>
+                <box size="0.015 0.15 0.08"/>
+            </geometry>
+            <material name="white"/>
+            <origin xyz="-0.1 0.21 0" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.015 0.15 0.08"/>
+            </geometry>
+            <origin xyz="-0.1 0.21 0" />
+        </collision>
+        <inertial>
+            <mass value="0.5"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+
+    <joint name="manipulator_hand_root_to_right_hand_joint" type="prismatic">
+        <axis xyz="1 0 0"/>
+        <limit effort="1000.0" lower="0" upper="0.07" velocity="0.5"/>
+        <parent link="manipulator_hand_root_link"/>
+        <child link="manipulator_right_hand_link"/>
+        <origin rpy="3.14 0 1.57" xyz="0.01 0 0" />
+    </joint>
+
+</robot>

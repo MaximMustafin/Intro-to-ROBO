@@ -1,0 +1,8 @@
+prefix=/home/maksim/catkin_ws/devel
+
+Name: simple_service
+Description: Description of simple_service
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

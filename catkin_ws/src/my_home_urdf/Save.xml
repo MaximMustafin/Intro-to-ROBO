@@ -1,0 +1,36 @@
+<!--Manipulator Elbow Link-->
+ <link name="manipulator_elbow_link">
+    <visual>
+      <geometry>
+        <box size="0.25 0.03 0.03"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+ </link>
+
+ <!-- Manipulator Base and Manipulator Elbow Joint-->
+ <joint name="manipulator_shoulder_to_elbow_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-0.3" upper="0.35" velocity="0.5"/>
+    <parent link="manipulator_shoulder_link"/>
+    <child link="manipulator_elbow_link"/>
+    <origin rpy="0 0 0" xyz="0.12 0.015 0.02" />
+ </joint> 
+
+ <!--Gripper Pole Link-->
+ <link name="gripper_pole_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.0125"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+ </link>
+
+ <!-- Manipulator Elbow and Gripper Pole Joint-->
+ <joint name="manipulator_elbow_to_gripper_pole_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <parent link="manipulator_elbow_link"/>
+    <child link="gripper_pole_link"/>
+    <origin rpy="0 1.57 0" xyz="0.148 0 0" />
+ </joint> 

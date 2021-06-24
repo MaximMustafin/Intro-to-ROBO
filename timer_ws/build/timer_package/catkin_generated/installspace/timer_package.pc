@@ -1,0 +1,8 @@
+prefix=/home/maksim/timer_ws/install
+
+Name: timer_package
+Description: Description of timer_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
