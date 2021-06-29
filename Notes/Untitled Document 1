@@ -1,0 +1,98 @@
+#include "Walker2.h"
+#include <iostream>
+#include <cmath>
+
+
+Walker2::Walker2()
+{
+    commandPub = node.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
+
+    laserSub = node.subscribe("scan", 10, &Walker2::scanCallback, this);
+
+    rotationSub = node.subscribe("odom", 10, &Walker2::odomCallback, this);
+}
+
+void Walker2::odomCallback(const nav_msgs::Odometry::ConstPtr msg)
+{
+    tf::Quaternion quat(
+        msg->pose.pose.orientation.x,
+        msg->pose.pose.orientation.y,
+        msg->pose.pose.orientation.z,
+        msg->pose.pose.orientation.w);
+
+    tf::Matrix3x3 matrix(quat);
+    double roll, pitch, yaw = 0;
+    matrix.getRPY(roll, pitch, yaw);
+    yaw_z = std::round(yaw*100)/100;
+    std::cout<<"yaw_z="<<yaw_z<<std::endl;
+}
+
+void Walker2::moveForward() 
+{
+    geometry_msgs::Twist msg;
+    if(keepMoving)
+    {
+        msg.linear.x = FORWARD_SPEED;
+        commandPub.publish(msg);
+    }
+    else
+    {
+        while(yaw_z != ROTATE_ANGLE)
+        {
+            msg.angular.z = ANGULAR_SPEED;
+            commandPub.publish(msg);
+            std::cout<<"I NEED TO ROTATE TO ANGLE="<< ROTATE_ANGLE<<std::endl;
+            ROTATE_ANGLE = scan->angle_min + i*scan->angle_increment;
+        if(ROTATE_ANGLE>M_PI)
+        {
+            ROTATE_ANGLE = ROTATE_ANGLE - 2*M_PI;
+        }
+        ROTATE_ANGLE = std::round(ROTATE_ANGLE*100)/100;
+        std::cout<<"ROTATE_ANGLE="<<ROTATE_ANGLE<<std::endl;
+        }
+    }
+    
+}
+
+void Walker2::scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
+{
+    keepMoving = true;
+
+    int maxDistanceIndex = -1; 
+    float maxDistance = 0;
+    for(int i=0; i<scan->ranges.size(); i++)
+    {
+        ROTATE_ANGLE = scan->angle_min + i*scan->angle_increment;
+        if(ROTATE_ANGLE>M_PI)
+        {
+            ROTATE_ANGLE = ROTATE_ANGLE - 2*M_PI;
+        }
+        ROTATE_ANGLE = std::round(ROTATE_ANGLE*100)/100;
+        std::cout<<"ROTATE_ANGLE="<<ROTATE_ANGLE<<std::endl;
+    }
+    
+    geometry_msgs::Twist msg;
+
+    if(yaw_z != ROTATE_ANGLE)
+    {
+        keepMoving = false;
+        msg.linear.x = 0;
+        commandPub.publish(msg);
+        
+    }
+
+}
+
+void Walker2::startMoving()
+{
+    ros::Rate rate(10);
+    ROS_INFO("Start moving");
+
+    while (ros::ok()) 
+    {
+        moveForward();
+        ros::spinOnce();
+        rate.sleep();
+    }
+}
+

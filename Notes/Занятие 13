@@ -1,0 +1,3 @@
+URDF Format
+check_urdf urdf_filename - проверить правиьльность 
+rosrun xacro xacro 08-macroed.urdf.xacro > 09-urdf - xacro to urdf

@@ -1,0 +1,61 @@
+ROS Basic Commands
+
+1)roscore - will start up a ROS Master, a ROS Parameter Server, a rosout logging node
+
+2)rosrun - allows you to run a node(turtlesim_turtlesim_node). Example: roscore, rosrun turtlesim turtlesim_node, rosrun turtlesim turtle_teleop_key
+
+3)rosnode - displays debugging information about ROS node including publication, subscriptions and connections.
+rosnode list - list active ndes 
+rosnode ping
+rosnode info - get all information about a node
+rosnode kill 
+rosnode machine
+
+4)rostopic - gives information about a topic and allows to publish messages on a topic
+rosotpic list - list active topics
+rostopic echo /topic
+rostopic info /topic
+rostopic type /topic 
+rostopic pub /topic typ args - command to publish messages to a topic. Example - rostopic pub /turtle1/cmd_vel geometry_msgs/Twist '{linear: {x: 0.5}}'. rostopic pub /turtle1/cmd_vel geometry_msgs/Twist '{linear: {x: 0.5, y:0, z: 0}, angular: {x:1, y:2, z:0}}'
+
+rostopic pub /turtle1/cmd_vel -r 10 geometry_msgs/Twist '{angular: {z: 0.5}}'
+
+rostopic pub /turtle1/cmd_vel -r 10 geometry_msgs/Twist '{angular: {z: 0.5}, linear: {x: 0.5}}' - окружность
+
+rosmsg
+rosmsg show /MsgName - prints information, if it is a structure, then the content is displayed
+rosmsg package /package - displays information about all types used in a package called PckgName
+
+rosservice list
+rosservice node /SrvName
+rosservice call /SrvName
+rosservice find /TypeName
+
+rosparam list /namespace
+rosparam get /PrmName
+rosparam set /PrmName
+rosparam oad
+rosparam dump
+rosparam delete
+
+5)roslaunch
+
+
+FrameWork RQT
+RQT is a software framework inside ROS that implements various aspects of ROS in a user-friendly way using a graphical interface.
+Any ready-made plug-ins with a graphical interface can be started(with the ROS Wizard running) using the command - rosrun rqt_gui rqt_gui
+After that, in the interface that appears, you can select any plugins 
+rqt_image_view
+rqt_graph
+rqt_bag - запись данных из топиков
+
+
+g++ -E square.cpp -o square_preprocessed.cpp
+g++ -E main.cpp -o main_preprocessed.cpp
+g++ -c main.cpp
+g++ -c square.cpp
+g++ square.o main.o -o progam
+./program
+g++ main.cpp square.cpp -o pro
+g++ -S square.cpp
+c++filt -n _Z6squarei - расшифровать assembler

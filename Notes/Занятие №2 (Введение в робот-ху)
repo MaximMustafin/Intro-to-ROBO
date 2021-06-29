@@ -1,0 +1,104 @@
+/ - корневой каталог - отправная точка дерева каталогов (файловой системы).
+
+/bin - Содержит базовые комманды интерпретатора, которые могу использоваться как root так и другими ползователями. те команды включают ls, mkdir, cp, mv, ,rm, и rmdir. Каталог /bin содержит Bash - командный интерпретатор по умолчанию в openSUSE.
+
+/boot - содержит данные необходимые для загрузки, такие, как загрузчик, ядро, и другие данные используемые прежде, чем ядро начинает выполнять программы пользовательского режимп.
+
+/dev - содержит файлы устройства которые представляют аппаратные компоненты
+
+/etc - содержит локальные конфигурационные файлы которые управляют работой программ подобных  x windiws system. Подкаталог /etc/init.d содержит скрипты исполняемые во время загрузки
+
+/home/username - содержит личные данные каждого пользавтеля
+
+/lib - содержит важные динамические библиотеки необходимые для загрузки системы 
+
+/media - съемные носители, не содержит жестких дисков системы
+
+/mnt - обеспечивает точку монтирования для временного монтируемых файловых системы 
+
+/opt - зарезервировано для установки дополнительных программ(ros)
+
+/root - домашний каталог пользователя
+
+/sbin - хранит бинарные файлы для загрузки, отката после изменений, и восстановления системы в дополнении к бинарным файлам в /bin
+
+/srv - Содержит данные для служб предоставляемых системой, таких, как FTP и HTTP
+
+/tmp - этот каталог используется программами которым требуется временное хранение файлов
+
+/usr - не имеет никакого отношения к пользователю. Содержит все прикладные программы и устанавливает вторичную иерархию в файловой системе.
+
+/usr/bin - содержит  общедоступные программы
+
+/usr/sbin - содержит программы для сис. админа например функции восстановления.
+
+/usr/local - локальные расширения которые не зависят от диструбутива
+
+/var - log files или буферные данные.
+
+bash - переход между директориями
+
+. - где я?
+
+cd - изменить директори
+ls -lha - вывести директорию в виде списка
+vim или nano - редактор командной строки
+touch {file} - создать новыый пустой файл
+cp -R {original_name}{new_name} - скопировать файл или директорию(и всё содержимое)
+mv - переместить файл
+rm {file} - удалить файл
+rm -rf {file/folder} удалит файл или папку без возможности восстановления
+pwd - вывести текущую рабочую директорию
+mkdir{directory} - создать пустую директорию
+man {command} - показать инструкцию для команды
+htop (или top) - диспетчер задач
+find - найти
+pip install --user {pip_package} - пакетный менеджер Python для установки пакетов в ~/.local/bin
+Ctr+c - отмена\ остановка
+
+
+
+ROS - open source robot-operating-system  - standard for robot programming
+ROS has two sides, because provides standards:
+-hardware abstraction
+-low-level device control
+-implementation of commonly used functionality
+
+ROS Philosophy:
+Peer to peer
+Tools-based
+Multi-lingual
+Thin - библиотеки независимы и стандартизированы
+Free and open source
+
+Основные понятия ROS:
+
+Nodes(узлы) - маленькие программы, которые выполняют конкретную задачу(двигатель, драйвер, отдельные части робота, sensor driver(s), actuator drivers(s), mapper). Отдельно друг от друга компилируюся, выполняются и управляются. Узлы постоянно общаются друг с другом. Nodes can publish or subscribe to a Topic. Nodes can also provide or use a Service
+roscpp - с++ client library
+rospy - python client library
+
+Messages and Topics:
+Topics - a topic is a name for a stream of messages with a defined type. -e.g., data from a laser range-finder might be sent on a topic called scan, with a message type of LaserScan. Nodes communicate with each other by publishing messages to topics. Nodes can publish or subcribe to a topic. Typically, 1 publisher and n subsribers. Publish/Subscribe model: 1-to-N broadcasting. 
+
+Messages - data structure defining the type of a topic. Strictly-typed data structures for iner-node communication. Comprmiesd of a nested structure of integers, floats, booleans, strings etc. and arrays of objects. Defined in *.msg files. For examples, geometry_msgs/Twist is used to express velocity commands: Vector3 linear, Vector3 angular. Vector3 is another message type composed of float64 x, float64 y, float64 z. 
+
+Services(request-response) - synchronous inter-node transactions /RPC. Service/Client model: 1-to-1 request-response. Service roles: carry out remote computation, trigger functionality/behavior. Example: -map_server/static_map - retrieves the current grid map used by the robot for navigation.
+
+ROS Master(включается в начале работы(roscore-команда для включения ROS Master)) - Provides connection information to nodes so that they can transmit messages to each other. Every node connects to a master at startup to register details of the message streams they publish, and the streams to which that they to subscribe. When a new node appears, the master provides it with the information that it needs to form a direct peer-to-peer connection with other nodes publishing and subcribing to the same message topics.
+
+Parameters
+
+Stack and packages
+Packages - software in ROS is organized in packages. A package contains one or more nodes and provides a ROS inteface. 
+Stack - набор Packages
+
+ROS 1 is currently supported only on Ubuntu
+
+
+
+
+
+
+
+
+

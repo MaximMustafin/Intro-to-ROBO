@@ -1,0 +1,16 @@
+export WEBOTS_HOME=/usr/local/webots
+webots /usr/local/webots/projects/samples/demos/worlds/anaglyph.wbt
+webots /usr/local/webots/projects/samples/demos/worlds/moon.wbt 
+webots /usr/local/webots/projects/samples/demos/worlds/stewart_platform.wbt
+webots /usr/local/webots/projects/samples/demos/worlds/soccer.wbt
+webots /usr/local/webots/projects/vehicles/worlds/city_night.wbt
+webots /usr/local/webots/projects/samples/geometries/worlds/floating_geometries.wbt
+webots /usr/local/webots/projects/samples/devices/worlds/propeller.wbt 
+webots /usr/local/webots/projects/samples/devices/worlds/track.wbt
+webots /usr/local/webots/projects/samples/howto/worlds/omni_wheels.wbt 
+sudo apt-get install ros-noetic-webots-ros
+1)roslaunch webots_ros pioneer3at.launch
+2)export WEBOTS_HOME=/usr/local/webots
+3)in TG
+4)rviz
+roslaunch webots_ros keyboard_teleop.launch

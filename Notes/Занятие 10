@@ -1,0 +1,7 @@
+SLAM
+
+rosrun map_server map_saver [-f mapname]
+rosrun rviz rviz -d my_config.rviz
+
+
+rosrun map_server map_saver map:=/new_map -f new_map

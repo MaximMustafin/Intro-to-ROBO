@@ -1,0 +1,21 @@
+Наследование
+	Если у класса есть хотя бы один virtaul метод, то этот класс является абстрактным.
+	virtaul ~Class(){}
+Особенности виртуальных методов:
+1)Виртуальные методы могут вызывать невиртуальные методы
+2)Виртуальные методы могут быть константными
+3)Все виртуальные методы базового класса являются виртуальными и для производных классов
+4)В языках Java и C# все методы виртуальны- ШОК
+
+protected - модификатор доступа, который позволяет дочернему классу использовать поля и методы родительского класса и больше нигде.
+
+ROS Services
+.yaml file:
+resolution - Resolution of the map, meters/pixel
+origin - 2D pose of the lower-left pixel as (x, y, yaw)
+occupied_thresh - Pixels with occupancy probability greater than this threshold are considered completely occupied
+free_thresh - Pixels with occupancy probability less than this threshold are considered completely free
+negate 
+
+SLAM - gmapping - sudo apt-get install ros-noetic-slam-gmapping
+

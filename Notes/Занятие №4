@@ -1,0 +1,36 @@
+Catkin builder
+
+In terminal:
+mkdir -p catkin_ws/src
+cd catkin_ws/src
+catkin_init_workspace
+cd ~/catkin_ws
+catkin_make - сборка всех исходников
+catkin build package_name - сборка одного исходника
+catkin config - the catkin workspace setup can be checked with 
+
+Folders
+-build - временные файлы нужные для установки(после препроцессинга)(don't touch)
+-devel - запускаемые файлы(don't touch)
+-src(work here) - исходный код
+
+
+sudo gedit .bashrc
+source ~/catkin_ws/devel/setup.bash 
+
+
+ROS Package
+-исходный код
+-документация
+Folders:
+
+src/ -< .cpp, .h files
+launch/
+script/ - исходный код на python
+include/ - .h files
+package.xml - dependencies on other catkin package, the package name, version numbers, authors
+CMakeLists.txt - CMake build file
+
+Creating a ROS Package
+catkin_create_pkg <package_name> [depend1] [depend2] [depend3]
+For example: catkin_create_pkg first_pkg std_msgs rospy roscpp
