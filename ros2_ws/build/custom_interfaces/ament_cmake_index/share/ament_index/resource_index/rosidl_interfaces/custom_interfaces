@@ -1,0 +1,6 @@
+msg/StrNum.idl
+msg/StrNum.msg
+srv/AddThreeInts.idl
+srv/AddThreeInts.srv
+srv/AddThreeInts_Request.msg
+srv/AddThreeInts_Response.msg

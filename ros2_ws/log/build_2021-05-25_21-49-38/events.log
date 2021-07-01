@@ -1,0 +1,381 @@
+[0.000000] (-) TimerEvent: {}
+[0.000856] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.001147] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict([('custom_interfaces', '/home/maksim/ros2_ws/install/custom_interfaces')])}
+[0.001462] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('custom_interfaces', '/home/maksim/ros2_ws/install/custom_interfaces')])}
+[0.001705] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.066858] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.073538] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[0.073849] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maksim/ros2_ws/build/custom_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/maksim/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maksim'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1784'), ('ROS_PACKAGE_PATH', '/home/maksim/timer_ws/src:/home/maksim/catkin_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/maksim/ros2_ws/install/custom_interfaces/lib:/home/maksim/timer_ws/devel/lib:/home/maksim/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/maksim'), ('OLDPWD', '/home/maksim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1597'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/maksim/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'maksim'), ('JOURNAL_STREAM', '8:44412'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/maksim/timer_ws/devel/lib/pkgconfig:/home/maksim/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maksim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/noetic/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/maksim-Lenovo-ideapad-300-15IBR:@/tmp/.ICE-unix/1827,unix/maksim-Lenovo-ideapad-300-15IBR:/tmp/.ICE-unix/1827'), ('INVOCATION_ID', 'a93c0aef05f840379f0f853ea7511d60'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1597a5e_bf80_4b1d_8bf2_3b066eb2e1f7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/maksim/timer_ws/devel/share/common-lisp:/home/maksim/catkin_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1270'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maksim/ros2_ws/install/py_pubsub:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maksim/ros2_ws/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[0.096520] (-) TimerEvent: {}
+[0.198804] (-) TimerEvent: {}
+[0.300234] (-) TimerEvent: {}
+[0.315648] (custom_interfaces) StdoutLine: {'line': b'[ 10%] Built target custom_interfaces__rosidl_generator_c\n'}
+[0.319526] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__cpp\n'}
+[0.400440] (-) TimerEvent: {}
+[0.409793] (custom_interfaces) StdoutLine: {'line': b'[ 23%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.414607] (custom_interfaces) StdoutLine: {'line': b'[ 33%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.420279] (custom_interfaces) StdoutLine: {'line': b'[ 43%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[0.425112] (custom_interfaces) StdoutLine: {'line': b'[ 53%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[0.500721] (-) TimerEvent: {}
+[0.524418] (custom_interfaces) StdoutLine: {'line': b'[ 64%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.601030] (-) TimerEvent: {}
+[0.656996] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.701235] (-) TimerEvent: {}
+[0.755496] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces\n'}
+[0.801578] (-) TimerEvent: {}
+[0.855678] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target custom_interfaces__py\n'}
+[0.901773] (-) TimerEvent: {}
+[0.987801] (custom_interfaces) StdoutLine: {'line': b'[ 84%] Built target custom_interfaces__python\n'}
+[1.001984] (-) TimerEvent: {}
+[1.093972] (custom_interfaces) StdoutLine: {'line': b'[ 89%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.096710] (custom_interfaces) StdoutLine: {'line': b'[ 94%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[1.097763] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[1.102310] (-) TimerEvent: {}
+[1.153864] (custom_interfaces) CommandEnded: {'returncode': 0}
+[1.203352] (-) TimerEvent: {}
+[1.306305] (-) TimerEvent: {}
+[1.407637] (-) TimerEvent: {}
+[1.508599] (-) TimerEvent: {}
+[1.545645] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[1.599813] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maksim/ros2_ws/build/custom_interfaces'], 'cwd': '/home/maksim/ros2_ws/build/custom_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maksim'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1784'), ('ROS_PACKAGE_PATH', '/home/maksim/timer_ws/src:/home/maksim/catkin_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/maksim/ros2_ws/install/custom_interfaces/lib:/home/maksim/timer_ws/devel/lib:/home/maksim/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/maksim'), ('OLDPWD', '/home/maksim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1597'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/maksim/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'maksim'), ('JOURNAL_STREAM', '8:44412'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/maksim/timer_ws/devel/lib/pkgconfig:/home/maksim/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maksim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/noetic/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/maksim-Lenovo-ideapad-300-15IBR:@/tmp/.ICE-unix/1827,unix/maksim-Lenovo-ideapad-300-15IBR:/tmp/.ICE-unix/1827'), ('INVOCATION_ID', 'a93c0aef05f840379f0f853ea7511d60'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1597a5e_bf80_4b1d_8bf2_3b066eb2e1f7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/maksim/timer_ws/devel/share/common-lisp:/home/maksim/catkin_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1270'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maksim/ros2_ws/install/py_pubsub:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maksim/ros2_ws/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[1.609460] (-) TimerEvent: {}
+[1.636428] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.638207] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[1.639569] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces\n'}
+[1.640942] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv\n'}
+[1.643024] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/add_three_ints.h\n'}
+[1.643346] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail\n'}
+[1.644237] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__struct.h\n'}
+[1.644832] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__functions.h\n'}
+[1.645155] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__functions.c\n'}
+[1.645482] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__type_support.h\n'}
+[1.645912] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[1.646220] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.646555] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/str_num.h\n'}
+[1.646853] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail\n'}
+[1.647263] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__type_support.h\n'}
+[1.647566] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__functions.h\n'}
+[1.647896] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__functions.c\n'}
+[1.648687] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__struct.h\n'}
+[1.649456] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[1.650211] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[1.650610] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[1.650983] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces\n'}
+[1.651492] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv\n'}
+[1.651861] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail\n'}
+[1.652217] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[1.652597] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[1.653142] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.653523] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail\n'}
+[1.653914] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__rosidl_typesupport_fastrtps_c.h\n'}
+[1.654289] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[1.654718] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces\n'}
+[1.655088] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv\n'}
+[1.655616] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail\n'}
+[1.656041] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/dds_fastrtps\n'}
+[1.656538] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.656954] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[1.657352] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.657716] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail\n'}
+[1.658073] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[1.658431] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.658790] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.659148] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces\n'}
+[1.659502] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv\n'}
+[1.659858] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail\n'}
+[1.660213] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__type_support.c\n'}
+[1.660567] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[1.661001] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[1.661311] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.661610] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail\n'}
+[1.661904] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__rosidl_typesupport_introspection_c.h\n'}
+[1.662222] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__type_support.c\n'}
+[1.662521] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[1.662818] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[1.663111] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces\n'}
+[1.663404] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv\n'}
+[1.663695] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/add_three_ints.hpp\n'}
+[1.663982] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail\n'}
+[1.664269] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__struct.hpp\n'}
+[1.664559] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__traits.hpp\n'}
+[1.664890] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__builder.hpp\n'}
+[1.665218] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[1.665516] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/str_num.hpp\n'}
+[1.665808] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail\n'}
+[1.666097] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__struct.hpp\n'}
+[1.666388] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__builder.hpp\n'}
+[1.666677] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__traits.hpp\n'}
+[1.667002] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces\n'}
+[1.667329] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv\n'}
+[1.667650] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail\n'}
+[1.667961] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__type_support.cpp\n'}
+[1.668264] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.668560] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg\n'}
+[1.668941] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail\n'}
+[1.669247] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__type_support.cpp\n'}
+[1.669540] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/include/custom_interfaces/msg/detail/str_num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.669830] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[1.670121] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[1.670416] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[1.670709] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[1.671000] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/__init__.py\n'}
+[1.709919] (-) TimerEvent: {}
+[1.782963] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/msg\n'}
+[1.785304] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/msg/_str_num_s.c\n'}
+[1.786794] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/msg/_str_num.py\n'}
+[1.788338] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/msg/__init__.py\n'}
+[1.789806] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/srv\n'}
+[1.791311] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/srv/_add_three_ints.py\n'}
+[1.793035] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/srv/__init__.py\n'}
+[1.793436] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/srv/_add_three_ints_s.c\n'}
+[1.793777] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.794117] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.794769] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.796287] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__python.so\n'}
+[1.797320] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/StrNum.idl\n'}
+[1.798412] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts.idl\n'}
+[1.799233] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/StrNum.msg\n'}
+[1.799983] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts.srv\n'}
+[1.801008] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts_Request.msg\n'}
+[1.801483] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/AddThreeInts_Response.msg\n'}
+[1.802123] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[1.802866] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[1.803539] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[1.804123] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[1.804746] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[1.805314] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[1.805927] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[1.806930] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[1.807809] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[1.808296] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[1.808812] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[1.809319] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[1.809780] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[1.810220] (-) TimerEvent: {}
+[1.810655] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.811226] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.811715] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.812300] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[1.812988] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.813518] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[1.813891] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.814225] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.814557] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[1.814896] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.815599] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[1.815948] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.816291] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.816632] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.817272] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.818072] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.818569] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.819065] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[1.819575] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[1.820601] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[1.832820] (custom_interfaces) CommandEnded: {'returncode': 0}
+[1.911008] (-) TimerEvent: {}
+[2.017651] (-) TimerEvent: {}
+[2.118740] (-) TimerEvent: {}
+[2.219588] (-) TimerEvent: {}
+[2.320506] (-) TimerEvent: {}
+[2.353918] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[2.357568] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[2.381202] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[2.422127] (-) TimerEvent: {}
+[2.425410] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[2.429937] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[2.437280] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maksim/ros2_ws/build/cpp_pubsub', '--', '-j4', '-l4'], 'cwd': '/home/maksim/ros2_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maksim'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1784'), ('ROS_PACKAGE_PATH', '/home/maksim/timer_ws/src:/home/maksim/catkin_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/maksim/ros2_ws/install/custom_interfaces/lib:/home/maksim/timer_ws/devel/lib:/home/maksim/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/maksim'), ('OLDPWD', '/home/maksim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1597'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/maksim/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'maksim'), ('JOURNAL_STREAM', '8:44412'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/maksim/timer_ws/devel/lib/pkgconfig:/home/maksim/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maksim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/noetic/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/maksim-Lenovo-ideapad-300-15IBR:@/tmp/.ICE-unix/1827,unix/maksim-Lenovo-ideapad-300-15IBR:/tmp/.ICE-unix/1827'), ('INVOCATION_ID', 'a93c0aef05f840379f0f853ea7511d60'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1597a5e_bf80_4b1d_8bf2_3b066eb2e1f7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/maksim/timer_ws/devel/share/common-lisp:/home/maksim/catkin_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1270'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maksim/ros2_ws/install/py_pubsub:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maksim/ros2_ws/build/cpp_pubsub'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[2.522919] (-) TimerEvent: {}
+[2.619135] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target talker\x1b[0m\n'}
+[2.622798] (-) TimerEvent: {}
+[2.723731] (-) TimerEvent: {}
+[2.739548] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/date_and_time_publisher.cpp.o\x1b[0m\n'}
+[2.823959] (-) TimerEvent: {}
+[2.924809] (-) TimerEvent: {}
+[3.025798] (-) TimerEvent: {}
+[3.126572] (-) TimerEvent: {}
+[3.227341] (-) TimerEvent: {}
+[3.328135] (-) TimerEvent: {}
+[3.428920] (-) TimerEvent: {}
+[3.529958] (-) TimerEvent: {}
+[3.560783] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/maksim/ros2_ws/build/py_pubsub/build', 'install', '--prefix', '/home/maksim/ros2_ws/install/py_pubsub', '--record', '/home/maksim/ros2_ws/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/maksim/ros2_ws/src/py_pubsub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'maksim', 'LC_TIME': 'ru_RU.UTF-8', 'SSH_AGENT_PID': '1784', 'ROS_PACKAGE_PATH': '/home/maksim/timer_ws/src:/home/maksim/catkin_ws/src:/opt/ros/noetic/share', 'XDG_SESSION_TYPE': 'x11', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/maksim/ros2_ws/install/custom_interfaces/lib:/home/maksim/timer_ws/devel/lib:/home/maksim/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/maksim', 'OLDPWD': '/home/maksim', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ru_RU.UTF-8', 'MANAGERPID': '1597', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/maksim/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'maksim', 'JOURNAL_STREAM': '8:44412', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/maksim/timer_ws/devel/lib/pkgconfig:/home/maksim/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'maksim', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/noetic/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/maksim-Lenovo-ideapad-300-15IBR:@/tmp/.ICE-unix/1827,unix/maksim-Lenovo-ideapad-300-15IBR:/tmp/.ICE-unix/1827', 'INVOCATION_ID': 'a93c0aef05f840379f0f853ea7511d60', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ru_RU.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1597a5e_bf80_4b1d_8bf2_3b066eb2e1f7', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ru_RU.UTF-8', 'XMODIFIERS': '@im=ibus', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/maksim/timer_ws/devel/share/common-lisp:/home/maksim/catkin_ws/devel/share/common-lisp', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.1270', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/maksim/ros2_ws/install/py_pubsub:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ru_RU.UTF-8', 'QT_ACCESSIBILITY': '1', 'ROS_MASTER_URI': 'http://localhost:11311', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ru_RU.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ru_RU.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/maksim/ros2_ws/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ru_RU.UTF-8', 'LC_PAPER': 'ru_RU.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic'}, 'shell': False}
+[3.630172] (-) TimerEvent: {}
+[3.731400] (-) TimerEvent: {}
+[3.832170] (-) TimerEvent: {}
+[3.932891] (-) TimerEvent: {}
+[4.033711] (-) TimerEvent: {}
+[4.134453] (-) TimerEvent: {}
+[4.235240] (-) TimerEvent: {}
+[4.335968] (-) TimerEvent: {}
+[4.436797] (-) TimerEvent: {}
+[4.537673] (-) TimerEvent: {}
+[4.539294] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[4.542194] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[4.543332] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[4.544184] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[4.545032] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[4.545782] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[4.637904] (-) TimerEvent: {}
+[4.678970] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[4.682528] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[4.683309] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[4.683764] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[4.684632] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[4.687761] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[4.693658] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[4.695889] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.702117] (py_pubsub) StdoutLine: {'line': b"removing '/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.703531] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[4.707458] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[4.738239] (-) TimerEvent: {}
+[4.770987] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/maksim/ros2_ws/install/py_pubsub/lib/py_pubsub\n'}
+[4.773959] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/maksim/ros2_ws/build/py_pubsub/install.log'\n"}
+[4.838510] (-) TimerEvent: {}
+[4.863061] (py_pubsub) CommandEnded: {'returncode': 0}
+[4.903233] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[4.938813] (-) TimerEvent: {}
+[5.039857] (-) TimerEvent: {}
+[5.141074] (-) TimerEvent: {}
+[5.242389] (-) TimerEvent: {}
+[5.343620] (-) TimerEvent: {}
+[5.445223] (-) TimerEvent: {}
+[5.546771] (-) TimerEvent: {}
+[5.648463] (-) TimerEvent: {}
+[5.750214] (-) TimerEvent: {}
+[5.851827] (-) TimerEvent: {}
+[5.953593] (-) TimerEvent: {}
+[6.055195] (-) TimerEvent: {}
+[6.156917] (-) TimerEvent: {}
+[6.258565] (-) TimerEvent: {}
+[6.360291] (-) TimerEvent: {}
+[6.462024] (-) TimerEvent: {}
+[6.563714] (-) TimerEvent: {}
+[6.665372] (-) TimerEvent: {}
+[6.767195] (-) TimerEvent: {}
+[6.868758] (-) TimerEvent: {}
+[6.970372] (-) TimerEvent: {}
+[7.071923] (-) TimerEvent: {}
+[7.173438] (-) TimerEvent: {}
+[7.275143] (-) TimerEvent: {}
+[7.376229] (-) TimerEvent: {}
+[7.477705] (-) TimerEvent: {}
+[7.578592] (-) TimerEvent: {}
+[7.679627] (-) TimerEvent: {}
+[7.780836] (-) TimerEvent: {}
+[7.881600] (-) TimerEvent: {}
+[7.982389] (-) TimerEvent: {}
+[8.083365] (-) TimerEvent: {}
+[8.184269] (-) TimerEvent: {}
+[8.287097] (-) TimerEvent: {}
+[8.387869] (-) TimerEvent: {}
+[8.488624] (-) TimerEvent: {}
+[8.589467] (-) TimerEvent: {}
+[8.690453] (-) TimerEvent: {}
+[8.791726] (-) TimerEvent: {}
+[8.893224] (-) TimerEvent: {}
+[8.994482] (-) TimerEvent: {}
+[9.096532] (-) TimerEvent: {}
+[9.198267] (-) TimerEvent: {}
+[9.299520] (-) TimerEvent: {}
+[9.401357] (-) TimerEvent: {}
+[9.502826] (-) TimerEvent: {}
+[9.604225] (-) TimerEvent: {}
+[9.705550] (-) TimerEvent: {}
+[9.807004] (-) TimerEvent: {}
+[9.909589] (-) TimerEvent: {}
+[10.011154] (-) TimerEvent: {}
+[10.113418] (-) TimerEvent: {}
+[10.215103] (-) TimerEvent: {}
+[10.316385] (-) TimerEvent: {}
+[10.417798] (-) TimerEvent: {}
+[10.518435] (-) TimerEvent: {}
+[10.619222] (-) TimerEvent: {}
+[10.719927] (-) TimerEvent: {}
+[10.820684] (-) TimerEvent: {}
+[10.921404] (-) TimerEvent: {}
+[11.022410] (-) TimerEvent: {}
+[11.123152] (-) TimerEvent: {}
+[11.223910] (-) TimerEvent: {}
+[11.324837] (-) TimerEvent: {}
+[11.425708] (-) TimerEvent: {}
+[11.527098] (-) TimerEvent: {}
+[11.627941] (-) TimerEvent: {}
+[11.728599] (-) TimerEvent: {}
+[11.829550] (-) TimerEvent: {}
+[11.930353] (-) TimerEvent: {}
+[12.031068] (-) TimerEvent: {}
+[12.131806] (-) TimerEvent: {}
+[12.232568] (-) TimerEvent: {}
+[12.333455] (-) TimerEvent: {}
+[12.434357] (-) TimerEvent: {}
+[12.535352] (-) TimerEvent: {}
+[12.636053] (-) TimerEvent: {}
+[12.736862] (-) TimerEvent: {}
+[12.837851] (-) TimerEvent: {}
+[12.938644] (-) TimerEvent: {}
+[13.039503] (-) TimerEvent: {}
+[13.140352] (-) TimerEvent: {}
+[13.241186] (-) TimerEvent: {}
+[13.341973] (-) TimerEvent: {}
+[13.442791] (-) TimerEvent: {}
+[13.543683] (-) TimerEvent: {}
+[13.644356] (-) TimerEvent: {}
+[13.745189] (-) TimerEvent: {}
+[13.846333] (-) TimerEvent: {}
+[13.947348] (-) TimerEvent: {}
+[14.048271] (-) TimerEvent: {}
+[14.149017] (-) TimerEvent: {}
+[14.249866] (-) TimerEvent: {}
+[14.350930] (-) TimerEvent: {}
+[14.451838] (-) TimerEvent: {}
+[14.552605] (-) TimerEvent: {}
+[14.653523] (-) TimerEvent: {}
+[14.754253] (-) TimerEvent: {}
+[14.854973] (-) TimerEvent: {}
+[14.955773] (-) TimerEvent: {}
+[15.056743] (-) TimerEvent: {}
+[15.157455] (-) TimerEvent: {}
+[15.258153] (-) TimerEvent: {}
+[15.359008] (-) TimerEvent: {}
+[15.459910] (-) TimerEvent: {}
+[15.560681] (-) TimerEvent: {}
+[15.661488] (-) TimerEvent: {}
+[15.690502] (cpp_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[15.761681] (-) TimerEvent: {}
+[15.862506] (-) TimerEvent: {}
+[15.963272] (-) TimerEvent: {}
+[16.064003] (-) TimerEvent: {}
+[16.165041] (-) TimerEvent: {}
+[16.266187] (-) TimerEvent: {}
+[16.366938] (-) TimerEvent: {}
+[16.467707] (-) TimerEvent: {}
+[16.568597] (-) TimerEvent: {}
+[16.573640] (cpp_pubsub) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[16.620307] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[16.669125] (-) TimerEvent: {}
+[16.731883] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'install'}
+[16.733453] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maksim/ros2_ws/build/cpp_pubsub'], 'cwd': '/home/maksim/ros2_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maksim'), ('LC_TIME', 'ru_RU.UTF-8'), ('SSH_AGENT_PID', '1784'), ('ROS_PACKAGE_PATH', '/home/maksim/timer_ws/src:/home/maksim/catkin_ws/src:/opt/ros/noetic/share'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_ETC_DIR', '/opt/ros/noetic/etc/ros'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/maksim/ros2_ws/install/custom_interfaces/lib:/home/maksim/timer_ws/devel/lib:/home/maksim/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/maksim'), ('OLDPWD', '/home/maksim'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1597'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/maksim/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'maksim'), ('JOURNAL_STREAM', '8:44412'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/maksim/timer_ws/devel/lib/pkgconfig:/home/maksim/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maksim'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/noetic/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/maksim-Lenovo-ideapad-300-15IBR:@/tmp/.ICE-unix/1827,unix/maksim-Lenovo-ideapad-300-15IBR:/tmp/.ICE-unix/1827'), ('INVOCATION_ID', 'a93c0aef05f840379f0f853ea7511d60'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f1597a5e_bf80_4b1d_8bf2_3b066eb2e1f7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', '/home/maksim/timer_ws/devel/share/common-lisp:/home/maksim/catkin_ws/devel/share/common-lisp'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1270'), ('ROS_ROOT', '/opt/ros/noetic/share/ros'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maksim/ros2_ws/install/py_pubsub:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maksim/ros2_ws/build/cpp_pubsub'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic')]), 'shell': False}
+[16.769539] (-) TimerEvent: {}
+[16.780203] (cpp_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.781499] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker\n'}
+[16.787132] (cpp_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""\n'}
+[16.788136] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub\n'}
+[16.789170] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub\n'}
+[16.789977] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh\n'}
+[16.790569] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv\n'}
+[16.791389] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh\n'}
+[16.791911] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv\n'}
+[16.792369] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash\n'}
+[16.792907] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh\n'}
+[16.793338] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh\n'}
+[16.793743] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv\n'}
+[16.794173] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv\n'}
+[16.794606] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub\n'}
+[16.797258] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake\n'}
+[16.797845] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake\n'}
+[16.798382] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml\n'}
+[16.808589] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[16.872831] (-) TimerEvent: {}
+[16.974367] (-) TimerEvent: {}
+[16.991295] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 0}
+[16.995723] (-) EventReactorShutdown: {}

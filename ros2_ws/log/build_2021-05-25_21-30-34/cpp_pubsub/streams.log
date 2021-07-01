@@ -1,0 +1,83 @@
+[0.081s] Invoking command in '/home/maksim/ros2_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/maksim/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/maksim/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/maksim/ros2_ws/install/cpp_pubsub
+[0.353s] -- The C compiler identification is GNU 9.3.0
+[0.613s] -- The CXX compiler identification is GNU 9.3.0
+[0.636s] -- Check for working C compiler: /usr/bin/cc
+[0.972s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.979s] -- Detecting C compiler ABI info
+[1.324s] -- Detecting C compiler ABI info - done
+[1.376s] -- Detecting C compile features
+[1.377s] -- Detecting C compile features - done
+[1.389s] -- Check for working CXX compiler: /usr/bin/c++
+[1.766s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.770s] -- Detecting CXX compiler ABI info
+[2.137s] -- Detecting CXX compiler ABI info - done
+[2.192s] -- Detecting CXX compile features
+[2.196s] -- Detecting CXX compile features - done
+[2.205s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.316s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[2.317s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.733s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.936s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.964s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.370s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.503s] -- Found FastRTPS: /opt/ros/foxy/include  
+[4.839s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.107s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[5.115s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.134s] -- Looking for pthread.h
+[5.457s] -- Looking for pthread.h - found
+[5.459s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.789s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.790s] -- Looking for pthread_create in pthreads
+[6.061s] -- Looking for pthread_create in pthreads - not found
+[6.062s] -- Looking for pthread_create in pthread
+[6.381s] -- Looking for pthread_create in pthread - found
+[6.386s] -- Found Threads: TRUE  
+[7.180s] -- Found custom_interfaces: 0.0.0 (/home/maksim/ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[7.233s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[7.600s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.605s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.606s] -- Configured cppcheck include dirs: 
+[7.606s] -- Configured cppcheck exclude dirs and/or files: 
+[7.610s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.610s] -- Configured cpplint exclude dirs and/or files: 
+[7.613s] -- Added test 'lint_cmake' to check CMake code style
+[7.617s] -- Added test 'uncrustify' to check C / C++ code style
+[7.618s] -- Configured uncrustify additional arguments: 
+[7.620s] -- Added test 'xmllint' to check XML markup files
+[7.635s] -- Configuring done
+[7.685s] -- Generating done
+[7.693s] -- Build files have been written to: /home/maksim/ros2_ws/build/cpp_pubsub
+[7.720s] Invoked command in '/home/maksim/ros2_ws/build/cpp_pubsub' returned '0': AMENT_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/maksim/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/maksim/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/maksim/ros2_ws/install/cpp_pubsub
+[7.731s] Invoking command in '/home/maksim/ros2_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/maksim/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maksim/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[7.902s] [35m[1mScanning dependencies of target listener[0m
+[8.072s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[31.668s] [ 50%] [32m[1mLinking CXX executable listener[0m
+[34.416s] [ 50%] Built target listener
+[34.541s] [35m[1mScanning dependencies of target talker[0m
+[34.878s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[50.228s] [100%] [32m[1mLinking CXX executable talker[0m
+[51.307s] [100%] Built target talker
+[51.374s] Invoked command in '/home/maksim/ros2_ws/build/cpp_pubsub' returned '0': AMENT_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/maksim/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/maksim/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[51.515s] Invoking command in '/home/maksim/ros2_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/maksim/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/maksim/ros2_ws/build/cpp_pubsub
+[51.550s] -- Install configuration: ""
+[51.566s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[51.572s] -- Set runtime path of "/home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[51.573s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[51.584s] -- Set runtime path of "/home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[51.585s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[51.586s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[51.586s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[51.588s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[51.590s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[51.593s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[51.594s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[51.596s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[51.597s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[51.597s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[51.615s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[51.621s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[51.622s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[51.622s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[51.623s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[51.623s] Invoked command in '/home/maksim/ros2_ws/build/cpp_pubsub' returned '0': AMENT_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/maksim/ros2_ws/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/maksim/ros2_ws/build/cpp_pubsub

@@ -1,0 +1,22 @@
+[0.090s] Invoking command in '/home/maksim/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/maksim/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[0.339s] [100%] Built target talker
+[1.172s] Invoked command in '/home/maksim/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/maksim/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[1.286s] Invoking command in '/home/maksim/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/maksim/ros2_ws/build/cpp_pubsub
+[1.322s] -- Install configuration: ""
+[1.324s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[1.325s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[1.329s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[1.330s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[1.331s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[1.332s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[1.333s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[1.334s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[1.334s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[1.335s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[1.336s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[1.337s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[1.338s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[1.346s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[1.347s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[1.348s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[1.349s] Invoked command in '/home/maksim/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/maksim/ros2_ws/build/cpp_pubsub

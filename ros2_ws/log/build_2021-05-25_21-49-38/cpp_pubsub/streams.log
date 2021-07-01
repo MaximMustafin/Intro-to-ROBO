@@ -1,0 +1,26 @@
+[0.087s] Invoking command in '/home/maksim/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/maksim/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[0.262s] [35m[1mScanning dependencies of target talker[0m
+[0.383s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/date_and_time_publisher.cpp.o[0m
+[13.333s] [100%] [32m[1mLinking CXX executable talker[0m
+[14.216s] [100%] Built target talker
+[14.264s] Invoked command in '/home/maksim/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/maksim/ros2_ws/build/cpp_pubsub -- -j4 -l4
+[14.383s] Invoking command in '/home/maksim/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/maksim/ros2_ws/build/cpp_pubsub
+[14.423s] -- Install configuration: ""
+[14.424s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[14.430s] -- Set runtime path of "/home/maksim/ros2_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[14.431s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[14.432s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[14.433s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[14.433s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[14.434s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[14.434s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[14.435s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[14.435s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[14.436s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[14.436s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[14.437s] -- Installing: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[14.439s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[14.440s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[14.440s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[14.441s] -- Up-to-date: /home/maksim/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[14.452s] Invoked command in '/home/maksim/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/maksim/ros2_ws/install/custom_interfaces:/home/maksim/ros2_ws/install/cpp_pubsub:/home/maksim/ros2_ws/install/py_pubsub:/opt/ros/foxy:/home/maksim/timer_ws/devel:/home/maksim/catkin_ws/devel:/opt/ros/noetic PYTHONPATH=/home/maksim/ros2_ws/install/custom_interfaces/lib/python3.8/site-packages:/home/maksim/ros2_ws/install/py_pubsub/lib/python3.8/site-packages:/home/maksim/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/maksim/ros2_ws/build/cpp_pubsub

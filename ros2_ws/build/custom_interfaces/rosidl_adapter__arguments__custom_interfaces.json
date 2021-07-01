@@ -1,0 +1,7 @@
+{
+  "package_name": "custom_interfaces",
+  "non_idl_tuples": [
+    "/home/maksim/ros2_ws/src/custom_interfaces:msg/StrNum.msg",
+    "/home/maksim/ros2_ws/src/custom_interfaces:srv/AddThreeInts.srv"
+  ]
+}
